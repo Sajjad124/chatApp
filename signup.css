@@ -1,0 +1,191 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	background-color: grey; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.wrapper{
+	background-color: white;
+	width: 450px;
+	border-radius: 5px;
+}
+/*signup form css*/
+.form{
+	padding: 25px 30px;
+}
+.form header{
+	font-size: 25px;
+	font-weight: bold;
+	border-bottom: 1px solid #e6e6e6;
+	padding-bottom: 10px;
+	/*justify-content: center;
+	align-items: center;
+	display: flex;*/
+}
+.form form{
+	margin: 20px 0;
+}
+.form form .error-txt{
+	color: #721c24;
+	background-color: #f8d7da;
+	padding: 8px 10px;
+	text-align: center;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+/*.form form .name-details{
+	display: flex;
+}*/
+.form form .field{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+	position: relative;
+}
+.form form .field label{
+	margin-bottom: 2px;
+
+}
+.form form .field input{
+	outline: none;
+}
+.form form .input input{
+	height: 40px;
+	width: 100%;
+	padding: 0 8px;
+	font-size: 14px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+
+}
+.form form .field i{
+	position: absolute;
+	right: 15px;
+	color: #ccc;
+	top: 70%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+.form form .image input{
+	font-size: 16px;
+}
+.form form .button input{
+	margin-top: 5px;
+	height: 45px;
+	border: none;
+	font-size: 16px;
+	background-color: #333;
+	color: #fff;
+	border-radius: 5px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.form .link{
+	text-align: center;
+	font-size: 16px;
+}
+.form .link a{
+	color: #333;
+}
+.form .link a:hover{
+	text-decoration: underline;
+}
+/*user area css*/
+.users{
+	padding: 25px 30px;
+}
+
+.users header,
+.users-list a{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 2px solid #e6e6e6;
+	padding-bottom: 20px;
+}
+.wrapper img{
+	border-radius: 50%;
+	object-fit: cover;
+}
+:is(.users,.users-list) .content
+{
+	display: flex;
+	align-items: center;
+}
+.users header .content img{
+	height: 50px;
+	width: 50px;
+}
+
+:is(.users,.users-list) .details{
+	margin-left: 15px;
+	color: #000;
+}
+:is(.users, .users-list) .details span{
+	font-size: 17px;
+	font-weight: bold;
+}
+.users header .logout{
+	background-color: #333;
+	color: #fff;
+	padding: 7px 10px;
+	border-radius: 5px;
+	font-size: 16px;
+}
+.users .search{
+	margin: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
+.users .search .text{
+	font-size: 18px;
+}
+.users .search input{
+	position: absolute;
+	height: 42px;
+	width: calc(100% - 50px);
+	border: 1px solid #ccc;
+	padding: 0 13px;
+	font-size: 16px;
+	border-radius: 5px 0 0 5px;
+	outline: none;
+}
+.users .search button{
+	width: 47px;
+	height: 42px;
+	border: none;
+	outline: none;
+	color: #fff;
+	background-color: #333;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	font-size: 16px;
+}
+.users-list{
+
+}
+.users-list a{
+	padding-right: 15px;
+	margin-bottom: 15px; 
+	page-break-after: 10px;
+}
+.users-list a .content img{
+	height: 40px;
+	width: 40px;
+}
+.users-list a .status-dot{
+	font-size: 12px;
+	color: #468669;
+}
+
